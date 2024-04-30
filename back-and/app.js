@@ -6,8 +6,8 @@ const cors = require("cors");
 
 app.use(express.json());
 const corsOptions = {
-  origin: "http://localhost:3001", // İstek yapan kaynağın adresi
-  credentials: true, // Kimlik doğrulama bilgileri gönderilsin mi?
+  origin: "http://localhost:3001", 
+  credentials: true, 
 };
 app.use(cors(corsOptions));
 app.get("/translator", async (req, res) => {
